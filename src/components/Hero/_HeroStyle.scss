@@ -1,0 +1,72 @@
+.hero{
+    width: 100%;
+    height: 660px;
+    background-color: $Color-black;
+    &__content{
+        width: 100%;
+        height: 100%;
+        padding-left: 89px;
+        padding-top: 80px;
+    }
+    &__title{
+        height: 250px;
+        width: porcentaje(636);
+       // background-color:yellow;
+    }
+    p{
+        color: $Color-gray-light;
+        margin-top: 24px;
+    }
+    &__btn{
+        @include button(243px);
+        margin-top: 24px;
+        transition: .3s all ease;
+        background-color: $Color-orange;
+        a{
+            text-decoration: none;
+            color: $Color-white;
+        }
+    }
+    &__btn:hover{
+            background-color: $Color-green;
+    }
+    @include tablet {
+        h1{
+            font-size: 3.5rem;
+            line-height: 4rem;
+        }
+    }
+    @include small{
+        padding-left: 1%;
+        width: 100%;
+        
+        h1{
+            font-size: 2.5rem;
+            line-height: 3rem;
+        }
+        &__title{
+            width: 100%;
+    
+        }
+        &__content{
+            padding-left: 0px;
+        }
+    }
+}
+
+
+.redes{
+    width: 103px;
+    height: 25px;
+    margin-right: 32px;
+    h4{
+        color: $Color-orange;
+    }
+    &__icons{
+        margin-top: 12px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
